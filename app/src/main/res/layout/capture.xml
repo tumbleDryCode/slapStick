@@ -24,31 +24,32 @@
                android:layout_width="fill_parent"
                android:layout_height="fill_parent">
   </SurfaceView>
- 
 
-  <com.slapStick.ViewfinderView
-      android:id="@+id/viewfinder_view"
-      android:layout_width="fill_parent"
-      android:layout_height="fill_parent"
-      android:background="@color/transparent">
-  </com.slapStick.ViewfinderView>
- 
-   <com.slapStick.VerticalTextView android:id="@+id/status_view"
+
+    <com.slapStick.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/transparent"></com.slapStick.ViewfinderView>
+
+    <com.slapStick.VerticalTextView android:id="@+id/status_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left|center_vertical"
-            android:background="@color/transparent"
+            android:background="@color/black"
             android:text="Take Aim"
-            android:textColor="@color/status_text"
-            android:textSize="18sp">
+            android:textColor="@color/white"
+
+            >
 </com.slapStick.VerticalTextView>
    <com.slapStick.VerticalTextView android:id="@+id/status_view_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
-            android:background="@color/transparent"
+            android:background="@color/black"
             android:text="Tap-Swipe to Slap"
-            android:textColor="@color/status_text"
-            android:textSize="18sp">
+            android:textColor="@color/white"
+
+            >
 </com.slapStick.VerticalTextView>
 </FrameLayout>

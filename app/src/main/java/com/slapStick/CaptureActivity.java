@@ -54,18 +54,7 @@ public class CaptureActivity extends DecoderActivity {
         // DO NOT USE OTHER PACKAGE NAMES IN THIS PROJECT! IT WILL CAUSE A MANIFEST MERGE CONFLICT!
         // DO NOT USE OTHER PACKAGE NAMES IN THIS PROJECT! IT WILL CAUSE A MANIFEST MERGE CONFLICT!
         // CHECK FOR CAMERA permissions are granted
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-            if (checkSelfPermission(android.Manifest.permission.CAMERA) == android.content.pm.PackageManager.PERMISSION_GRANTED) {
-                Log.v(TAG, "Permission is granted");
-            } else {
-                Log.v(TAG, "Permission is revoked");
-                // reqyest premission for camera access without using ActivityCompat
-                requestPermissions(new String[]{android.Manifest.permission.CAMERA}, 1);
 
-
-                // android.app.ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.CAMERA}, 1);
-            }
-        }
 
 
 
@@ -109,6 +98,7 @@ public class CaptureActivity extends DecoderActivity {
             surfaceHolder.addCallback(this);
             surfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
         }
+
 		} catch(Exception e) {
         System.out.println("onResume.DecoderActivity.error: " + e);
 		e.printStackTrace();
@@ -135,8 +125,7 @@ public class CaptureActivity extends DecoderActivity {
 
     protected void showScanner() {
         inScanMode = true;
-        // statusView.setText(R.string.msg_default_status);
-        // vbtnTakePic.setVisibility(View.VISIBLE);
+
         viewfinderView.setVisibility(View.VISIBLE);
     }
  

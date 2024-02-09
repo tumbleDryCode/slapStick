@@ -83,10 +83,18 @@ public class VerticalTextView extends TextView {
         paint.setColor(getTextColors().getDefaultColor());
 
         String text = text();
-	   paint.setTextSize((float)18);
-	  paint.setARGB(220, 140, 240, 240);
+        paint.setTextSize((float)38);
+	    // paint.setARGB(220, 140, 240, 240);
+        // set paint color to white
+        paint.setColor(Color.BLUE);
+        
         paint.getTextBounds(text, 0, text.length(), _bounds);
-        canvas.drawText(text, getCompoundPaddingLeft(), (_bounds.height() - _width) / 2, paint);
+        // draw text with yellow shadow
+        // draw the text centered on the canvas
+
+        canvas.drawText(text, getCompoundPaddingLeft() + 10, (_bounds.height() - _width) / 2, paint);
+        paint.setColor(Color.WHITE);
+        canvas.drawText(text, getCompoundPaddingLeft() + 11, ((_bounds.height() - _width) / 2) + 1, paint);
 
         canvas.restore();
     }
