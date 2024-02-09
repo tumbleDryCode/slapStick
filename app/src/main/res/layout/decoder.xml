@@ -23,11 +23,11 @@
                android:layout_height="fill_parent">
   </SurfaceView>
 
-  <com.slapStick.ViewfinderView
+  <com.thumbSlapper.ViewfinderView
       android:id="@+id/viewfinder_view"
       android:layout_width="fill_parent"
       android:layout_height="fill_parent"
       android:background="@color/transparent">
-  </com.slapStick.ViewfinderView>
+  </com.thumbSlapper.ViewfinderView>
 
 </FrameLayout>

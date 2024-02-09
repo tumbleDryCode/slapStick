@@ -26,13 +26,14 @@
   </SurfaceView>
 
 
-    <com.slapStick.ViewfinderView
+    <com.thumbSlapper.ViewfinderView
         android:id="@+id/viewfinder_view"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@color/transparent"></com.slapStick.ViewfinderView>
+        android:background="@color/transparent"></com.thumbSlapper.ViewfinderView>
 
-    <com.slapStick.VerticalTextView android:id="@+id/status_view"
+    <com.thumbSlapper.VerticalTextView
+        android:id="@+id/status_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left|center_vertical"
@@ -41,8 +42,9 @@
             android:textColor="@color/white"
 
             >
-</com.slapStick.VerticalTextView>
-   <com.slapStick.VerticalTextView android:id="@+id/status_view_a"
+</com.thumbSlapper.VerticalTextView>
+   <com.thumbSlapper.VerticalTextView
+       android:id="@+id/status_view_a"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
@@ -51,5 +53,5 @@
             android:textColor="@color/white"
 
             >
-</com.slapStick.VerticalTextView>
+</com.thumbSlapper.VerticalTextView>
 </FrameLayout>

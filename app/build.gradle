@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.slapStick'
+    namespace 'com.thumbSlapper'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.slapStick"
+        applicationId "com.thumbSlapper"
         minSdk 24
         targetSdk 33
         versionCode 1
